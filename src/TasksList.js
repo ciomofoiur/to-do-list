@@ -6,12 +6,13 @@ const TasksList = () => {
   const { tasks } = useContext(AppContext);
   return (
     <>
-      {tasks.map(() => (
-        <Task />
-      ))}
-      {/*<Task />
-      <Task />
-      <Task /> */}
+      {tasks.map(() => {
+        return (
+          <div key={Math.random() * 100000}>
+            <Task />
+          </div>
+        );
+      })}
     </>
   );
 };

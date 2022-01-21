@@ -20,7 +20,26 @@ h1 {
   flex-direction: column;
 }
 
+.task-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .task {
   border: 1px solid yellowgreen;
   border-radius: 20px;
+}
+
+.new-task-container {
+  position: fixed;
+  left: 50%;
+  bottom: 100px;
+  transform: translate(-50%);
+}
+
+.new-task-button {
+}
+
+.weather {
+  border: 1px solid aqua;
 }
